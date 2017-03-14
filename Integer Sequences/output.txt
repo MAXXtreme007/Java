@@ -1,0 +1,7 @@
+You have 5 pairs of numbers to calculate the summation.
+The summations of the pairs of numbers are: 
+1) 55.0
+2) 210.0
+3) 465.0
+4) 820.0
+5) 1275.0

@@ -1,0 +1,41 @@
+package gui;
+
+import bp.Perceptron;
+import java.util.Scanner;
+
+/**
+ * @author MAXXtreme
+ *
+ */
+public class GUI {
+	public static void main(String[] args) {
+		Perceptron p = new Perceptron();
+		
+		System.out.println("Please enter how many synapses the perceptron should have.");
+
+		setNumberOfSynapses(keyboard.nextInt());
+		
+		
+		for (int m = 0; m < 2; ++m) {
+			for (int n = 0; n < 2; ++n) {
+				p.getSynapse1().setActivated(intToBool(m));
+				p.getSynapse2().setActivated(intToBool(n));
+				boolean expectedOutcome = intToBool(m) && intToBool(n);
+				while (p.isFiring() != expectedOutcome) {
+					p.train(expectedOutcome);
+				}
+			}
+		}
+		for (int m = 0; m < 2; ++m) {
+			for (int n = 0; n < 2; ++n) {
+				p.getSynapse1().setActivated(intToBool(m));
+				p.getSynapse2().setActivated(intToBool(n));
+				System.out.println(p);
+			}
+		}
+	}
+	
+	public static boolean intToBool(int value) {
+		return value == 0 ? false : true;
+	}
+}

@@ -1,0 +1,107 @@
+<%@ page import="bp.Circuit" %>
+
+<html>
+<head>
+	<title>My First Webpage</title>
+	<link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+	<script src="functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="title">
+		<h1><u>Ohm's Law Calculator</u></h1>
+			<div id='description'>
+				My First Webpage<br>
+				This website will calculate resistance, amperage, or voltage.<br>
+				Please enter only two of the three fields to calculate the unknown.<br>
+				Copyright: Matt Campbell (November 15, 2015)<br>
+			</div>
+			<script>
+			$(document).ready(function(){
+				$("h1").mousedown(function(){
+					$("description").css("background-color", "lightgray");
+					$( "h1" ).animate({
+						height: "+=200"
+					}, 1000, function() {});
+					$( "description" ).animate({
+						opacity: 1.0
+					}, 1000, function() {});
+				});
+				$("h1").mouseup(function(){
+					$("description").css("background-color", 'rgba(0,0,0,0)');
+					$("description").css("opacity", 1.0);
+					$( "h1" ).animate({
+						height: "-=200"
+					}, 1000, function() {});
+					$( "description" ).animate({
+						opacity: 0.0
+					}, 1000, function() {});
+				});
+			});
+			</script>
+			
+		</div><!--END TITLE DIV-->
+
+		<form method="post" action="" class="formStyle">
+		<div id="input">
+			<!--Voltage input--><br><br>
+			<input id="boxes" type="number" name=txtVoltage placeholder="Voltage" min="0" step="0.1" oninput="CheckEnableCalculate" autofocus>
+			<!--Amperage input-->
+			<input id="boxes" type="number" name=txtAmperage placeholder="Amperage" min="0" step="0.1" oninput="CheckEnableCalculate">
+			<!--Resistance input-->
+			<input id="boxes" type="number" name=txtResistance placeholder="Resistance" min="0" step="0.1" oninput="CheckEnableCalculate"><br><br>
+			<!--Calculate-->
+			<input id="boxes" type="Submit" name="cmdCalculate" value="Calculate"><br><br>
+			<script>
+				CheckEnableCalculate();
+			</script>
+		</div><!--END INPUT DIV-->
+		</form><!--END FORM-->
+	
+
+		<div id="results">
+		<!--Calculate Unknown Given Correct Data-->
+		<%
+		if (request.getMethod().toUpperCase().equals("POST")) {
+			Circuit myCircuit = new Circuit();
+			try {
+				//set voltage
+				myCircuit.setVoltage(Double.parseDouble(request.getParameter("txtVoltage")));
+			} catch (Exception e) {}
+			try {
+				//set resistance
+				myCircuit.setResistance(Double.parseDouble(request.getParameter("txtResistance")));
+			} catch (Exception e) {}
+			try {
+				//set amperage
+				myCircuit.setAmperage(Double.parseDouble(request.getParameter("txtAmperage")));
+			} catch (Exception e) {}
+
+			// display answer
+			if (myCircuit.getVoltage() == 0 && myCircuit.getResistance() == 0 && myCircuit.getAmperage() == 0) {
+				out.println("Please enter two fields to calculate the unknown.");
+			} else if (myCircuit.getVoltage() > 0 && myCircuit.getResistance() == 0 && myCircuit.getAmperage() == 0) {
+				out.println("Please fill amperage & resistance to calculate voltage.");
+			} else if (myCircuit.getVoltage() == 0 && myCircuit.getResistance() > 0 && myCircuit.getAmperage() == 0) {
+				out.println("Please fill voltage & amperage to calculate resistance.");
+			} else if (myCircuit.getVoltage() == 0 && myCircuit.getResistance() == 0 && myCircuit.getAmperage() > 0) {
+				out.println("Please fill voltage & resistance to calculate amperage.");
+			} else if (myCircuit.getVoltage() > 0 && myCircuit.getResistance() > 0 && myCircuit.getAmperage() > 0) {
+				out.println("Please only fill two fields.");
+			} else if (myCircuit.getVoltage() > 0 && myCircuit.getAmperage() > 0) {
+				myCircuit.calculateResistance();
+				out.println("The resistance is " + myCircuit.getResistance() + " ohms");
+			} else if (myCircuit.getResistance() > 0 && myCircuit.getAmperage() > 0) {
+				myCircuit.calculateVoltage();
+				out.println("The voltage is " + myCircuit.getVoltage() + " volts");
+			} else if (myCircuit.getVoltage() > 0 && myCircuit.getResistance() > 0) {
+				myCircuit.calculateAmperage();
+				out.println("The amperage is " + myCircuit.getAmperage() + " amps");
+			}
+		}
+		%>
+		</div><!--END RESULTS DIV-->
+	</div><!--END WRAPPER DIV-->
+</body><!--END BODY DIV-->
+</html>

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int numOfSyn = 3;
+		Perceptron p = new Perceptron(numOfSyn);
+		
+
+		for (int m=0;m<2; ++m) {
+			for (int n=0;n<2; ++n) {
+				for(int r=0;r<2; ++r) {
+						p.synList.get(0).setActivated(intToBool(m));
+						p.synList.get(1).setActivated(intToBool(n));
+						p.synList.get(2).setActivated(intToBool(r));
+						
+				boolean expectedOutcome = intToBool(m) && intToBool(n) && intToBool(r);
+				while(p.isFiring() != expectedOutcome) {
+					//train it boi
+					p.train(expectedOutcome);
+					
+				}
+			}
+		}
+	}
+
+				for (int m=0;m<2; ++m) {
+					for (int n=0;n<2; ++n) {
+						for(int r=0;r<2; ++r) {
+							p.synList.get(0).setActivated(intToBool(m));
+							p.synList.get(1).setActivated(intToBool(n));
+							p.synList.get(2).setActivated(intToBool(r));
+								System.out.println(p);
+							}
+						}
+					}
+				
+				
+
+	} // end main
+	
+	public static boolean intToBool(int value){
+	
+		return value == 0 ? false : true;
+	}
+
+	
+} // end class

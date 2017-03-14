@@ -1,0 +1,52 @@
+package bp;
+import java.util.ArrayList;
+
+public class Perceptron {
+	private double threshold = 1;
+	private double learningRate = 0.00000001;
+	public ArrayList<Synapse> synapses = new ArrayList<Synapse>();
+	
+	public double getThreshold() {
+		return threshold;
+	}
+	
+	public void setThreshold(double threshold) {
+		this.threshold = threshold;
+	}
+	
+	public double getLearningRate() {
+		return learningRate;
+	}
+	
+	public void setLearningRate(double learningRate) {
+		this.learningRate = learningRate;
+	}
+	
+	public boolean isFiring() {
+		 double sum = 0;
+		 for (Synapse s : synapses) {
+			 sum += s.getAccumulatedWeight();
+		 }
+		 return sum >= threshold;
+	}
+	
+	public void train(boolean expectValue) {
+		for (Synapse s : synapses) {
+			s.addWeight(learningRate);
+		}
+	}
+
+	public String toString() {
+		return "[" + synapses.get(0).isActivated() + ", " 
+		+ synapses.get(1).isActivated() + ", "
+		+ synapses.get(2).isActivated() + " = " 
+		+ isFiring() + "]";
+	}
+	
+	public Perceptron(int numOfSynapases) {
+		for (int x=0;x<numOfSynapases; x++){
+			Synapse s = new Synapse(0);
+			synapses.add(s);
+		}
+	}
+}

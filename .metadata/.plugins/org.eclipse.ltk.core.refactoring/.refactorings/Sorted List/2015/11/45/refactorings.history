@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;ul&apos; in &apos;ui.Main.main(...)&apos; to &apos;sl&apos;&#x0D;&#x0A;- Original project: &apos;Sorted List&apos;&#x0D;&#x0A;- Original element: &apos;ui.Main.main(String[]).ul&apos;&#x0D;&#x0A;- Renamed element: &apos;ul&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;ul&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;ui{Main.java[Main~main~\[QString;@ul!117!149!128!129!QSortedList;!0!false" name="sl" references="true" stamp="1446490082490" version="1.0"/>
+</session>

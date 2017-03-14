@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+
+public class Perceptron {
+	private double threshold = 1;
+	private double learningRate = 0.1;
+	public ArrayList<Synapse> synList = new ArrayList<Synapse>();
+	
+
+	public double getThreshold() {
+		return threshold;
+	}
+	
+	public void setThreshold(double threshold) {
+		this.threshold = threshold;
+	}
+	
+	public double getLearningRate() {
+		return learningRate;
+	}
+	
+	public void setLearningRate(double learningRate) {
+		this.learningRate = learningRate;
+	}
+	// Stuff I won't need
+//	public Synapse getSynapse1() {
+//		return synapse1;
+//	}
+//	
+//	public void setSynapse1(Synapse synapse1) {
+//		this.synapse1 = synapse1;
+//	}
+//	
+//	public Synapse getSynapse2() {
+//		return synapse2;
+//	}
+//	
+//	public void setSynapse2(Synapse synapse2) {
+//		this.synapse2 = synapse2;
+//	}
+	
+	public boolean isFiring() {
+		 double sum = 0;
+		 for (Synapse s : synList) {
+			 sum += s.getAccumulatedWeight();
+		 }
+		 return sum >= threshold;
+	}
+	
+	public void train(boolean expectValue) {
+		for (Synapse s : synList) {
+			s.addWeight(learningRate);
+		}
+		
+		
+	}
+
+	public String toString() {
+		return "[" + synList.get(0).isActivated() + "-" + synList.get(1).isActivated() + "-"
+		+ synList.get(2).isActivated() + "-" + ">" + isFiring() + "]";
+	}
+	
+
+
+	public Perceptron(int numOfSyn) {
+		for (int x=0;x<numOfSyn; x++){
+			Synapse s = new Synapse(0);
+			synList.add(s);
+		}
+	
+	}
+	
+}
+

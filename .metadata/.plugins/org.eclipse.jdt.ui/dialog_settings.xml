@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateSimilarElements"/>
+		<item value="false" key="updateTextualMatches"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item value="true" key="GenerateJavadoc"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item value="2" key="layout"/>
+		<item value="true" key="group_libraries"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;Aggregate for window 1446482168624&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.m2e.MavenModuleFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.BinaryProjectFilter1&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.ExternalPluginLibrariesFilter1&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsTempFiles&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;" key="memento"/>
+		<item value="1" key="rootMode"/>
+		<item value="false" key="linkWithEditor"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="true" key="create_constructor"/>
+		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item value="528" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="696" key="DIALOG_HEIGHT"/>
+		<item value="704" key="DIALOG_X_ORIGIN"/>
+		<item value="64" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="C:\Program Files\Java\jdk1.8.0_60\bin\javadoc.exe" key="javadoc_command_history"/>
+		<item value="1.3" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Valentine\doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="Sorted List">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Sorted List\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Sorted List\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Growth">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Growth\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Growth\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Servers">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Servers\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Servers\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="RemoteSystemsTempFiles">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\RemoteSystemsTempFiles\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\RemoteSystemsTempFiles\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Challenge">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Challenge\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Challenge\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Game Engine">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Game Engine\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Game Engine\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Hello World">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Hello World\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Hello World\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Tic Tac Toe">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Tic Tac Toe\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Tic Tac Toe\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Graph Theory">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Graph Theory\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Graph Theory\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Example">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Example\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Example\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Valentine">
+				<item value="" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Valentine\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Parallel &amp; Series">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Parallel &amp; Series\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Parallel &amp; Series\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Workout">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Workout\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Workout\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Integer Sequences">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Integer Sequences\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Integer Sequences\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Salesman">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Salesman\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Salesman\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Newton Webpage">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Newton Webpage\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Newton Webpage\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Circuit">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Circuit\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Circuit\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Padovan Sequences">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Padovan Sequences\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Padovan Sequences\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Procedural Generation">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Procedural Generation\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Procedural Generation\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Newton">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Newton\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Newton\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Ohm&apos;s Law">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Ohm&apos;s Law\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Ohm&apos;s Law\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Multithread">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Multithread\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Multithread\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Parallelism">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Parallelism\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Parallelism\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Binary Distributions">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Binary Distributions\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Binary Distributions\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Steel Tech">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Steel Tech\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Steel Tech\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Fitness">
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Fitness\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace\Fitness\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
+	<section name="FatJarPackageWizard">
+		<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="Main - Fitness" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="Fitness\Fitness.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="Fitness/Fitness.jar"/>
+			<item value="J:\My Dear Jerusha.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\MAXXtreme\OneDrive\Documents\CofO\Programming\Workspace.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="818" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="695" key="DIALOG_HEIGHT"/>
+		<item value="560" key="DIALOG_X_ORIGIN"/>
+		<item value="61" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="JavaSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="15" key="INCLUDE_MASK"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="JarPackageWizard">
+		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>
+		<item value="" key="JarManifestWizardPage.MANIFEST_LOCATION"/>
+		<item value="false" key="JarManifestWizardPage.SEAL_JAR"/>
+		<item value="true" key="JarPackageWizardPage.COMPRESS"/>
+		<item value="false" key="JarManifestWizardPage.REUSE_MANIFEST"/>
+		<item value="false" key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS"/>
+		<item value="true" key="jarOptionsWizardPage.EXPORT_WARNINGS"/>
+		<item value="" key="jarOptionsWizardPage.DESCRIPTION_LOCATION"/>
+		<item value="true" key="jarOptionsWizardPage.BUILD_IF_NEEDED"/>
+		<item value="false" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
+		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
+		<item value="true" key="JarManifestWizardPage.GENERATE_MANIFEST"/>
+		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
+		<item value="false" key="JarPackageWizardPage.OVERWRITE"/>
+		<item value="false" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
+		<item value="false" key="JarPackageWizardPage.REFACTORINGS"/>
+		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
+		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\MAXXtreme\Desktop\Newton.jar"/>
+			<item value="C:\Users\MAXXtreme\Desktop\Fitness.jar"/>
+			<item value="C:\Users\MAXXtreme\Desktop\Circuit.jar"/>
+			<item value="Circuit.jar"/>
+		</list>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item value="false" key="SortOrdering"/>
+		<item value="false" key="RemoveFinal"/>
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+</section>

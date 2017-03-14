@@ -1,0 +1,170 @@
+package main;
+
+import java.util.Scanner;
+//import extra love
+//import loads of dates
+//import lots of hugs
+//import a future kiss
+//import a world full of countries to visit
+//import God's goodness, mercy, and blessings upon you
+//import a lifetime of adventures together, struggling together, and growing together
+
+/**
+ * 2-13-16
+ * At this precise moment in time, you have just finished a 12+ hour shift at St. Johns Mercy hospital.
+ * I am at home crying at how incredible God's love & blessings are - how wonderful you are to me.
+ * You are the most amazing blessing I could ever ask for; you are simply too good to be true.
+ * Your first gift to me is simply priceless; it means more to me than all the riches in the world.
+ * Yet as incredible your gift is and all that it signifies, nothing can compare to how much you mean to me.
+ * I stand in awe of the most amazing woman, and wonder why God would ever bless me with the honor to love & serve you.
+ * No matter what happens, no matter what comes our way, I will love you 'til the day I die.
+ * That is not by my means, but by the power of God
+ * I have thought and thought and thought about how I could portray my love to you, yet everything seems to be in vain.
+ * I feel as though there is nothing that could come close to exemplifying how much you mean to me and how much I love you!
+ * The only thing I can say that comes close, is that I will seek after Christ first in our relationship.
+ * Then from that, I will be able to best love and serve you through the love of Christ!
+ * I wish to be able to love and serve you as Christ did His bride.
+ * I desire to give my wants, my desires - myself - up for you: to die to myself daily.
+ * That I might sanctify you you, grow together and cleanse you by the washing of water with the Word.
+ * That I might one day present you before our heavenly Father, in splendor, without spot or wrinkle or any such thing.
+ * That you might be holy and without blemish.
+ * I really don't know how else I could love you more fully.
+ * I cherish you dearly; I care for you so deeply & want the very, very best for you.
+ * I always want what is best for you in the long haul - eternity - not just the here and now.
+ * I don't know how I could possibly give you a better gift than the one you gave me.
+ * I have never received such an amazing, heart-felt gift in my life; thank you so much, Jerusha!
+ * The only thing that I can think of to remotely give you back something in return, is to utilize the gifts God has given me.
+ * So, I have created a program for you, which I hope will manifest my love to you in some small fraction of it all!
+ * (I'm very sorry you have to deal with my geeky nerdyness ;)
+ * 
+ * @author Yours Truly,
+ * Matt Campbell
+ */
+
+public class Jerusha {
+	/**
+	 * Main entry point of the program.
+	 * 
+	 * @param args
+	 * 
+	 * This is where my love for you begins...
+	 */
+
+	public static void main(final String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+
+		// ask which method to use: loop or add all
+		System.out.println("Love Language:");
+		System.out.println("To receive phsyical touch, press 1.");
+		System.out.println("To receive words of affirmation, press 2.");
+		System.out.println("To receive time together, press 3.");
+		System.out.println("To receive gifts, press 4.");
+		
+		// calculation method
+		int calcMethod = keyboard.nextInt();
+
+		// error method
+		if (calcMethod != 1 && calcMethod != 2) {
+			System.out.println("Error! Please press 1 or 2.");
+			calcMethod = keyboard.nextInt();
+		}
+
+		// loop method
+		if (calcMethod == 1) {
+			// tell user what method is being used
+			System.out.println("You have chosen to use the loop method.");
+			// ask user for first integer to add
+			System.out.println("Please enter your first integer.");
+			double firstSumNumber = keyboard.nextDouble();
+			// ask user for second integer to add
+			System.out.println("Please enter your second integer.");
+			double lastSumNumber = keyboard.nextDouble();
+			// ask user for the value he wishes to add by
+			System.out.println("Please enter the value "
+					+ "you wish to add by.");
+			double skipCounter = keyboard.nextDouble();
+			System.out.println("You have chosen to add "
+					+ "all the integers in multiples of " + skipCounter
+					+ ", from the values of " + firstSumNumber + " to "
+					+ lastSumNumber + ".");
+			double runningTotal = 0;
+
+			// for (start; end; increment)
+			if (firstSumNumber < lastSumNumber) {
+				for (double x = firstSumNumber; x <= lastSumNumber; x = x
+						+ skipCounter) {
+					if (x + skipCounter <= lastSumNumber) {
+						System.out.print(x + " + ");
+						runningTotal += x;
+					}
+					if (x + skipCounter > lastSumNumber) {
+						runningTotal += x;
+						System.out.println(x + " = ");
+						System.out.println(runningTotal);
+					}
+				}
+
+			}
+			if (firstSumNumber > lastSumNumber) {
+				for (double x = firstSumNumber; x >= lastSumNumber; x = x
+						- skipCounter) {
+					if (x - skipCounter >= lastSumNumber) {
+						System.out.print(x + " + ");
+						runningTotal += x;
+					}
+					if (x - skipCounter < lastSumNumber) {
+						runningTotal += x;
+						System.out.println(x + " = ");
+						System.out.println(runningTotal);
+					}
+				}
+			}
+			if (firstSumNumber == lastSumNumber) {
+				System.out.println("You entered the same integer for "
+						+ "both the first integer and the last. "
+						+ "Thus, the total sum of integers between "
+						+ "your two integers is the same integer: "
+						+ firstSumNumber + ".");
+			}
+
+			// addition method
+		} else if (calcMethod == 2) {
+			// tell user what method is being used
+			System.out.println("You have chosen to "
+					+ "use the addition method.");
+			// ask user for first integer to add
+			System.out.println("Please enter your first integer.");
+			double firstSumNumber = keyboard.nextDouble();
+			// ask user for second integer to add
+			System.out.println("Please enter your second integer.");
+			double lastSumNumber = keyboard.nextDouble();
+			System.out.println("You have chosen to add "
+					+ "all the integers between the values of "
+					+ firstSumNumber + " to " + lastSumNumber + ".");
+			double runningTotal = 0;
+
+			// use summation formula to add integers
+			if (firstSumNumber < lastSumNumber) {
+				runningTotal = ((lastSumNumber * (lastSumNumber + 1)) / 2)
+						- ((firstSumNumber * (firstSumNumber + 1)) / 2)
+						+ firstSumNumber;
+				System.out.println(runningTotal);
+			}
+			if (firstSumNumber > lastSumNumber) {
+				runningTotal = ((firstSumNumber * (firstSumNumber + 1)) / 2)
+						- ((lastSumNumber * (lastSumNumber + 1)) / 2)
+						+ lastSumNumber;
+				System.out.println(runningTotal);
+			}
+			if (firstSumNumber == lastSumNumber) {
+				System.out.println("You entered the same integer for "
+						+ "both the first integer and the last. "
+						+ "Thus, the total sum of integers between "
+						+ "your two integers is the same integer: "
+						+ firstSumNumber + ".");
+			}
+		}
+		// free up resources
+		keyboard.close();
+	}
+}

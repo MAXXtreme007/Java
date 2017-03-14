@@ -1,0 +1,55 @@
+package gui;
+import bp.Perceptron;
+import bp.Synapse;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int numOfSynapses = 3;
+		Perceptron p = new Perceptron(numOfSynapses);
+		
+			double trainer = 0;
+			for (Synapse walker : p.synapses) {
+				for(int i=0; i<2; i++) {
+					p.synapses.get(0).setActivated(intToBool(i));
+					// Change logical operand
+					boolean expectedOutcome = intToBool(i) || intToBool(i) && intToBool(i);
+					while(p.isFiring() != expectedOutcome) {
+						p.train(expectedOutcome);
+					}
+				}
+			}
+		
+		// Train perceptron
+//		for (int i=0; i<2; i++) {
+//			for (int j=0; j<2; j++) {
+//				for(int k=0; k<2; k++) {
+//					p.synapses.get(0).setActivated(intToBool(i));
+//					p.synapses.get(1).setActivated(intToBool(j));
+//					p.synapses.get(2).setActivated(intToBool(k));
+//					// Change logical operand
+//					boolean expectedOutcome = intToBool(i) || intToBool(j) && intToBool(k);
+//					while(p.isFiring() != expectedOutcome) {
+//						p.train(expectedOutcome);
+//					}
+//				}
+//			}
+//		}
+		
+		// Produce output
+		for (int l=0;l<2; ++l) {
+			for (int m=0;m<2; ++m) {
+				for(int n=0;n<2; ++n) {
+					p.synapses.get(0).setActivated(intToBool(l));
+					p.synapses.get(1).setActivated(intToBool(m));
+					p.synapses.get(2).setActivated(intToBool(n));
+					System.out.println(p);
+				}
+			}
+		}
+	}
+	
+	public static boolean intToBool(int value){
+		return value == 0 ? false : true;
+	}
+}

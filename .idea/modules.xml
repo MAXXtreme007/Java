@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Binary Distributions/Binary Distributions.iml" filepath="$PROJECT_DIR$/Binary Distributions/Binary Distributions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Challenge/Challenge.iml" filepath="$PROJECT_DIR$/Challenge/Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Circuit/Circuit.iml" filepath="$PROJECT_DIR$/Circuit/Circuit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Example/Example.iml" filepath="$PROJECT_DIR$/Example/Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fitness/Fitness.iml" filepath="$PROJECT_DIR$/Fitness/Fitness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game Engine/Game Engine.iml" filepath="$PROJECT_DIR$/Game Engine/Game Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph Theory/Graph Theory.iml" filepath="$PROJECT_DIR$/Graph Theory/Graph Theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Growth/Growth.iml" filepath="$PROJECT_DIR$/Growth/Growth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello World/Hello World.iml" filepath="$PROJECT_DIR$/Hello World/Hello World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Integer Sequences/Integer Sequences.iml" filepath="$PROJECT_DIR$/Integer Sequences/Integer Sequences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithread/Multithread.iml" filepath="$PROJECT_DIR$/Multithread/Multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NeuralNet/NeuralNet.iml" filepath="$PROJECT_DIR$/NeuralNet/NeuralNet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Newton/Newton.iml" filepath="$PROJECT_DIR$/Newton/Newton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Newton Webpage/Newton Webpage.iml" filepath="$PROJECT_DIR$/Newton Webpage/Newton Webpage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ohm's Law/Ohms Law.iml" filepath="$PROJECT_DIR$/Ohm's Law/Ohms Law.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Padovan Sequences/Padovan Sequences.iml" filepath="$PROJECT_DIR$/Padovan Sequences/Padovan Sequences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parallel &amp; Series/Parallel &amp; Series.iml" filepath="$PROJECT_DIR$/Parallel &amp; Series/Parallel &amp; Series.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parallelism/Parallelism.iml" filepath="$PROJECT_DIR$/Parallelism/Parallelism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Procedural Generation/Procedural Generation.iml" filepath="$PROJECT_DIR$/Procedural Generation/Procedural Generation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Salesman/Salesman.iml" filepath="$PROJECT_DIR$/Salesman/Salesman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servers/Servers.iml" filepath="$PROJECT_DIR$/Servers/Servers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorted List/SortedList.iml" filepath="$PROJECT_DIR$/Sorted List/SortedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Steel Tech/Steel Tech.iml" filepath="$PROJECT_DIR$/Steel Tech/Steel Tech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tic Tac Toe/TicTacToe.iml" filepath="$PROJECT_DIR$/Tic Tac Toe/TicTacToe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Valentine/Valentine.iml" filepath="$PROJECT_DIR$/Valentine/Valentine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workout/Workout.iml" filepath="$PROJECT_DIR$/Workout/Workout.iml" />
+    </modules>
+  </component>
+</project>

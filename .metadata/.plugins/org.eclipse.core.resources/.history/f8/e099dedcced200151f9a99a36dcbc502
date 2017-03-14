@@ -1,0 +1,254 @@
+package main;
+
+import java.util.Scanner;
+//import extra love
+//import loads of dates
+//import lots of hugs
+//import a future kiss
+//import a world full of countries to visit
+//import God's goodness, mercy, and blessings upon you
+//import a lifetime of adventures together, struggling together, and growing together
+
+/**
+ * 2-13-16
+ * At this precise moment in time, you have just finished a 12+ hour shift at St. Johns Mercy hospital.
+ * I am at home crying at how incredible God's love & blessings are - how wonderful you are to me.
+ * You are the most amazing blessing I could ever ask for; you are simply too good to be true.
+ * Your first gift to me is simply priceless; it means more to me than all the riches in the world.
+ * Yet as incredible your gift is and all that it signifies, nothing can compare to how much you mean to me.
+ * I stand in awe of the most amazing woman, and wonder why God would ever bless me with the honor to love & serve you.
+ * No matter what happens, no matter what comes our way, I will love you 'til the day I die.
+ * That is not by my means, but by the power of God
+ * I have thought and thought and thought about how I could portray my love to you, yet everything seems to be in vain.
+ * I feel as though there is nothing that could come close to exemplifying how much you mean to me and how much I love you!
+ * The only thing I can say that comes close, is that I will seek after Christ first in our relationship.
+ * Then from that, I will be able to best love and serve you through the love of Christ!
+ * I wish to be able to love and serve you as Christ did His bride.
+ * I desire to give my wants, my desires - myself - up for you: to die to myself daily.
+ * That I might sanctify you you, grow together and cleanse you by the washing of water with the Word.
+ * That I might one day present you before our heavenly Father, in splendor, without spot or wrinkle or any such thing.
+ * That you might be holy and without blemish.
+ * I really don't know how else I could love you more fully.
+ * I cherish you dearly; I care for you so deeply & want the very, very best for you.
+ * I always want what is best for you in the long haul - eternity - not just the here and now.
+ * I don't know how I could possibly give you a better gift than the one you gave me.
+ * I have never received such an amazing, heart-felt gift in my life; thank you so much, Jerusha!
+ * The only thing that I can think of to remotely give you back something in return, is to utilize the gifts God has given me.
+ * So, I have created a program for you, which I hope will manifest my love to you in some small fraction of it all!
+ * (I'm very sorry you have to deal with my geeky nerdyness ;)
+ * 
+ * @author Yours Truly,
+ * Matt Campbell
+ */
+
+public class Jerusha {
+	/**
+	 * Main entry point of the program.
+	 * 
+	 * @param args
+	 * 
+	 * This is where my love for you begins...
+	 */
+
+	public static void main(final String[] args) {
+		loveLanguage();
+	}
+	public static void loveLanguage(){
+		// ask which love language to use
+		System.out.println("Love Language:\n");
+		System.out.println("To receive phsyical touch, press 1.");
+		System.out.println("To receive words of affirmation, press 2.");
+		System.out.println("To receive time together, press 3.");
+		System.out.println("To receive gifts, press 4.");
+		System.out.println("To receive acts of service, press 5.");
+		System.out.println("To see a visual representation of a fraction of my love for you, press 6.");
+		
+		chooseLL();
+	}
+	public static void chooseLL() {
+		Scanner keyboard = new Scanner(System.in);
+		// love language
+		int loveLanguage = keyboard.nextInt();
+		// error love language
+		do {
+			System.out.println("Error! Please receive one of my acts of love. ;)");
+			System.out.println("Please choose 1, 2, 3, 4, 5, or 6.");
+			loveLanguage = keyboard.nextInt();
+		} while (loveLanguage < 1 && loveLanguage > 6);
+		
+		if (loveLanguage == 1) {
+			physicalTouch();
+		}
+		if (loveLanguage == 2) {
+			affirmationWords();
+		}
+		if (loveLanguage == 3) {
+			timeTogether();
+		}
+		if (loveLanguage == 4) {
+			gifts();
+		}
+		if (loveLanguage == 5) {
+			serviceActs();
+		}
+		if (loveLanguage == 6) {
+			loveVisualization();
+		}
+		
+		// free up resources
+		keyboard.close();
+	}
+	public static void physicalTouch() {
+		// scan for love
+		Scanner scanner = new Scanner(System.in);
+		// tell what love language was chosen
+		System.out.println("You have chosen physical touch.\n");
+		System.out.println("This is good for a free hug (or hugs) everytime we're together.");
+		String pause1 = scanner.nextLine();
+		if (pause1.equals("")){}
+		System.out.println("This coupon is valid for holding hands anytime you desire.");
+		String pause2 = scanner.nextLine();
+		if (pause2.isEmpty()){}
+		System.out.println("This is coupon is unfortunately invalid currently.");
+		System.out.println("One day though, this can be used for a first kiss.");
+		System.out.println("Subsequently, after it has been used once, "
+				+ "it is valid to be used whenever and as many times as you wish. ;)");
+		String pause3 = scanner.nextLine();
+		if (pause3.isEmpty()){}
+		System.out.println("This is coupon is always valid & is used continuously 24/7.");
+		System.out.println("I will always - to the best of my ability - treat you with the utmost respect.");
+		System.out.println("I will look upon you and treat you with pure intentions and actions.\n\n\n");
+		String pause4 = scanner.nextLine();
+		if (pause4.isEmpty()){}
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+	}
+	public static void affirmationWords() {
+		//scan for love
+		Scanner scanner = new Scanner(System.in);
+		// tell what love language was chosen
+		System.out.println("You have chosen words of affirmation.\n");
+		System.out.println("This one is so hard because it is virtually impossible to put even a fraction "
+				+ "of your amazing qualities into something so finite.");
+		System.out.println("Even though this program is software (and can be produced infinitely), "
+				+ "all your amazingness & perfection make break the program,\n"
+				+ "and so I therefore need to limit how many of your qualities to talk about. ;)");
+		String pause1 = scanner.nextLine();
+		if (pause1.equals("")){}
+		System.out.println("First, you are quite simply the most incredible & amazing woman I have ever seen.");
+		System.out.println("Yet unlike so many other beautiful women, you possess a beauty that is extremely rare.");
+		System.out.println("Your beauty is from the Lord... Your heart to love and serve Him first & foremost\n"
+				+ "and from that, share that love to others, is what makes you the most beautiful person I have ever seen.");
+		String pause2 = scanner.nextLine();
+		if (pause2.isEmpty()){}
+		System.out.println("Your laughter & smile are so contagious; it is .");
+		String pause3 = scanner.nextLine();
+		if (pause3.isEmpty()){}
+		System.out.println(".\n\n\n");
+		String pause4 = scanner.nextLine();
+		if (pause4.isEmpty()){}
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+	}
+	public static void timeTogether() {
+		//scan for love
+		Scanner scanner = new Scanner(System.in);
+		// tell what love language was chosen
+		System.out.println("You have chosen time together.\n");
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+	}
+	public static void gifts() {
+		//scan for love
+		Scanner scanner = new Scanner(System.in);
+		// tell what love language was chosen
+		System.out.println("You have chosen gifts.\n");
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+	}
+	public static void serviceActs() {
+		//scan for love
+		Scanner scanner = new Scanner(System.in);
+		// tell what love language was chosen
+		System.out.println("You have chosen acts of service.\n");
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+	}
+	public static void loveVisualization() {
+		//scan for love
+		Scanner scanner = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("You have chosen to see a visual representation of my love for you. <3\n");
+		// ask for first integer to add
+		System.out.println("Please enter a small number between 1 & 10.");
+		double firstSumNumber = keyboard.nextDouble();
+		if (firstSumNumber < 1 || firstSumNumber > 10) {
+			System.out.println("Error! Please enter a number between 1 & 10.");
+			firstSumNumber = keyboard.nextInt();
+		}
+		// ask for second integer to add
+		System.out.println("Now please enter a huge number.");
+		double lastSumNumber = keyboard.nextDouble();
+		if (lastSumNumber < 10000) {
+			System.out.println("Sorry, but this number is not great enough! ;)");
+			System.out.println("Please enter a bigger number.");
+			lastSumNumber = keyboard.nextInt();
+		}
+		// ask for the value to add by
+		System.out.println("Now please enter the value you wish to add by.");
+		double skipCounter = keyboard.nextDouble();
+		System.out.println("You have chosen to add all the integers in multiples of " + skipCounter
+				+ ", from the values of " + firstSumNumber + " to " + lastSumNumber + ".");
+		double runningTotal = 0;
+		System.out.println("Please press enter now.");
+		String pause1 = scanner.nextLine();
+		if (pause1.equals("")){}
+		
+		
+		// visual representation of my love for you
+		for (double x = firstSumNumber; x <= lastSumNumber; x = x + skipCounter) {
+			if (x + skipCounter <= lastSumNumber) {
+				System.out.println(x + " + ");
+				runningTotal += x;
+			}
+			if (x + skipCounter > lastSumNumber) {
+				runningTotal += x;
+				System.out.println(x + " =\n");
+				System.out.println(runningTotal + "\n");
+			}
+		}
+		System.out.println("First, scroll up and look at all the numbers that were added.");
+		System.out.println("Now that you have seen the numbers, you should realize that "
+				+ "it is a very unique yet very large number.");
+		System.out.println("However, despite it's immense size, it is still just a fraction of the love I have for you.");
+		System.out.println("I hope you begin to understand & realize that the love of the Father is more immense than anything we can ever imagine.");
+		System.out.println("When I love you, I want it to be the pure, selfless, agape love flowing out of me but from our Father.");
+		System.out.println("Just know that I love you more than I can say and that it is ever increasing.");
+		System.out.println("The numbers you have just seen are mere fractions of the love I have for you.");
+		System.out.println("I love you with an everlasting love, Jerusha.\n\n\n");
+		String pause2 = scanner.nextLine();
+		if (pause2.equals("")){}
+		
+		// choose another love language
+		loveLanguage();
+		// free up resources
+		scanner.close();
+		keyboard.close();
+	}
+}
